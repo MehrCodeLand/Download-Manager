@@ -66,6 +66,7 @@
             this.createNewDownloadToolStripMenuItem.Name = "createNewDownloadToolStripMenuItem";
             this.createNewDownloadToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
             this.createNewDownloadToolStripMenuItem.Text = "Create New Download";
+            this.createNewDownloadToolStripMenuItem.Click += new System.EventHandler(this.createNewDownloadToolStripMenuItem_Click);
             // 
             // importFromFileToolStripMenuItem
             // 
@@ -117,6 +118,7 @@
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "HomeFm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "HomeFm";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

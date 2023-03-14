@@ -15,6 +15,7 @@ namespace myApllication.Forms.MainApp
     {
         public HomeFm()
         {
+            StartPosition = FormStartPosition.CenterScreen;
             InitializeComponent();
         }
 
@@ -32,5 +33,11 @@ namespace myApllication.Forms.MainApp
 
 
         #endregion
+
+        private void createNewDownloadToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CreateNewDownloadFm downloadFm = new CreateNewDownloadFm();
+            downloadFm.ShowDialog();
+        }
     }
 }
